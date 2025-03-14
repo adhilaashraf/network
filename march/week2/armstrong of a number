@@ -1,4 +1,4 @@
-cho "enter a number : "
+echo "enter a number : "
 read num
 
 original_num=$num
