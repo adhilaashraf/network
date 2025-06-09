@@ -1,0 +1,13 @@
+echo "Enter the start line number to delete:"
+read start
+
+echo "Enter the end line number to delete:"
+read end
+
+echo "Enter the filename:"
+read file
+
+# Delete lines from start to end and update the file
+sed -i "${start},${end}d" "$file"
+
+echo "Lines $start to $end deleted from $file."
